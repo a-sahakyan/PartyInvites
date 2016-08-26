@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/Styles.css" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css.map" rel="stylesheet" />
+    <title>Index</title>
+    <style>
+        .btn {
+            color: white;
+            text-decoration: none;
+        }
+       
+        body {
+            background-color: darkmagenta;
+        }
+
+       
+        
+    </style>
+
+</head>
+<body>
+    <div class="text-center">
+        @ViewBag.Greeting World
+        <h2>We're going to have an exciting party.></h2>
+        <h3>>And you are invited</h3>
+        <div class="btn btn-success">
+            @Html.ActionLink("RSVP Now", "RsvpForm")
+        </div>
+    </div>
+
+</body>
+</html>
